@@ -3,7 +3,7 @@ You can add your own quotes to the NocoinShillbot.
 
 **How to add your own quotes:**
 1. Fork this repository
-2. Open (your) answers.py and add the new Quote as the **first** quote in the file.
+2. Open (your) answers.py and add the new quote as the **first** quote in the file.
 3. Double check that it looks something like this:
 ```
 answers = random.sample([
@@ -28,6 +28,7 @@ keys = dict(
 )
 ```
 2. Add/Remove Quotes from answers.py. (\n is Enter on the keyboard, you probably want to remove those)
+
 2.1 Remove/edit Footer is you want to
 ```
 answers = random.sample([
@@ -77,6 +78,7 @@ Logging in...
 Logged in.
 ```
 10. Lay back and relax
+
 10b. Get an error
 > F
 
