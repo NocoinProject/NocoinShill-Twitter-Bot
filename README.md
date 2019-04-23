@@ -27,23 +27,27 @@ keys = dict(
 	access_token_secret =   'YourAccessTokenSecret',
 )
 ```
+
 2. Add/Remove Quotes from answers.py. (\n is Enter on the keyboard, you probably want to remove those)
 
-2.1 Remove/edit Footer is you want to
+  2.1 Remove/edit Footer is you want to
 ```
 answers = random.sample([
 "This is without Footer. " ,
 "This is with Footer. " + Footer], 1)
 ```
-5.Edit sleeptime and sleeptext in twitter_bot.py
+
+3. Edit sleeptime and sleeptext in twitter_bot.py
 ```
 sleeptime = int(600) //How long does to bot sleep in sec
 sleeptext = "10" //How long will the bot sleep in minutes
 ```
-4. Find this line and change the EDITME text to your keyword(s). To use multiple keyword do "Keyword1 OR Keyword2 OR ..."
+
+4. Find this line and change EDITME to your keyword(s). To use multiple keyword do "Keyword1 OR Keyword2 OR ..."
 ```
 for s in tweepy.Cursor(api.search, q="EDITME", lang='en').items():
 ```
+
 5. If you don't have a unique twist to your response based on the keyword in the tweet, delete everything from the first else to the last sleeptime
 ```
 else: 
@@ -51,6 +55,7 @@ else:
 time.sleep(sleeptime)
 ```
 >Delete
+
 6. Remove List1 to List12
 ```
 List1 = ... 
@@ -58,12 +63,14 @@ List1 = ...
 List12 =... 
 ```
 > Delete
+
 7. Remove message = ... and change Nocoiner to your keyword
 ```
 sn = s.user.screen_name
 message = List1 + ans_str //remove
 print ("String with \"Nocoiner\" found in tweet " + str(s.id))
 ```
+
 8. Change "message" in m = ... to "ans_str"
 ```
 m = ".@%s " % (sn) + str(message)
@@ -72,14 +79,16 @@ to
 ```
 m = ".@%s " % (sn) + str(ans_str)
 ```
+
 9. Save and run your bot
 ```
 Logging in...
 Logged in.
 ```
+
 10. Lay back and relax
 
-10b. Get an error
+  10b. Get an error
 > F
 
 
